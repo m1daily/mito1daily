@@ -94,6 +94,7 @@ h1 {
 	font-size:2.0vw;
 	margin-top: 2.0vw;
 	margin-left: 20.0vw;
+	width: 50%;
 }
 
 h2, h3 {
@@ -126,6 +127,7 @@ div section {
 
 .description {
 	margin-left:6em;
+	width: 25%;
 }
 
 .platePair {
@@ -145,6 +147,7 @@ div section {
 }
 
 .platePair > div {
+	width: 60%;
 	padding-top:1rem;
 }
 
