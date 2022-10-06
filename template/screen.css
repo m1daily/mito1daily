@@ -46,7 +46,7 @@ body {
 		"footer main";
 	grid-template-rows:auto 1fr auto;
 	grid-template-columns:auto 1fr;
-	background: url(../images/back.png) repeat;
+	/* background: url(../images/mito1daily.png) repeat; */
 }
 
 body > nav {
@@ -62,7 +62,7 @@ body > nav {
 
 main {
 	grid-area:main;
-	padding:1rem var(--mainPad);
+	/* padding:1rem var(--mainPad); */
 	width: 80vw;
 }
 
@@ -126,7 +126,7 @@ div section {
 }
 
 .description {
-	margin-left:6em;
+	margin-left:6%;
 	width: 25%;
 }
 
