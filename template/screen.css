@@ -97,8 +97,16 @@ h1 {
 	width: 50%;
 }
 
-h2, h3 {
+h2 {
+	font-size: 2.0vw;
+	margin-top: 2.0vw;
+	margin-left: 12.0vw;
 	margin-bottom:0.5rem;
+	width: 50%;
+}
+
+h3 {
+	margin-bottom: 0.5rem;
 }
 
 p {
@@ -174,12 +182,14 @@ div section {
 .awards {
 	display:inline-block;
 	margin:0 auto;
+	width: 60%
 }
 
-.awards ul {
-	text-align:left;
-	padding-top:0.5rem;
-	margin-bottom:2rem;
+.awards li {
+	text-align: left;
+	font-weight: bold;
+	padding: 0vw;
+	margin-bottom: 0.2vw;
 }
 
 .credits {
@@ -190,20 +200,14 @@ div section {
 .credits caption {
 	font-size:1.5em;
 	font-weight:bold;
+	margin-top: 2vw;
 	margin-bottom:0.5rem;
 }
 
 .credits tr > * {
 	padding:0.25em 0.75em;
 	border:0.0625rem solid #0025;
-}
-
-.credits thead th {
-	background:#D0D0D8;
-}
-
-.credits tbody tr:nth-child(even) > * {
-	background:#E0E0EC;
+	border: double;
 }
 
 .galleryIndex ul {
