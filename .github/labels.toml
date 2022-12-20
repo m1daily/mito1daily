@@ -1,134 +1,44 @@
-# 参考URL
-# https://qiita.com/willow-micro/items/51eeb3efe5b4192a4abd (ラベル名)
-# https://qiita.com/hayashima/items/4e2cfcaf3216f5686003 (ラベル定義)
+["Status: Available"]
+color = "87a9c0"
+name = "Status: Available"
+description = "待機中"
 
-#---------------------------------------------------------------------------------------------------
-# 1.Type 取り組む作業の種別を表すラベル
-[bug]
+["Status: Canceled"]
+color = "808ac6"
+name = "Status: Canceled"
+description = "作業中止"
+
+["Status: Completed"]
+color = "81c785"
+name = "Status: Completed"
+description = "作業完了"
+
+["Status: In Progress"]
+color = "bec680"
+name = "Status: In Progress"
+description = "作業中"
+
+["Type: Bug Fix"]
 color = "ff6666"
 name = "Type: Bug Fix"
 description = "バグ修正"
 
-# [documentation]
-# color = "ffdb66"
-# name = "Type: Enhancement"
-# description = "新機能追加"
+["Type: Enhancement"]
+color = "ffdb66"
+name = "Type: Enhancement"
+description = "新機能追加"
 
-# [duplicate]
-# color = "66baff"
-# name = "Type: Improvement"
-# description = "改良修正(処理の安定化など)"
+["Type: Improvement"]
+color = "66baff"
+name = "Type: Improvement"
+description = "改良修正(処理の安定化など)"
 
-# [enhancement]
-# color = "669eff"
-# name = "Type: Optimization"
-# description = "最適化(処理の高速化など)"
+["Type: Optimization"]
+color = "669eff"
+name = "Type: Optimization"
+description = "最適化(処理の高速化など)"
 
-# ["good first issue"]
-# color = "ff6666"
-# name = "Type: Security Fix"
-# description = "セキュリティ問題の修正"
-
-# #---------------------------------------------------------------------------------------------------
-# # 2.Status 状態を表すラベル
-# ["help wanted"]
-# color = "87a9c0"
-# name = "Status: Available"
-# description = "待機中"
-
-# [invalid]
-# color = "bec680"
-# name = "Status: In Progress"
-# description = "作業中"
-
-# [question]
-# color = "81c785"
-# name = "Status: Completed"
-# description = "作業完了"
-
-# [wontfix]
-# color = "808ac6"
-# name = "Status: Canceled"
-# description = "作業中止"
-
-# [Duplicate]
-# color = "89a3a9"
-# name = "Status: Duplicate"
-# description = "Issue重複"
-
-# [Pending]
-# color = "80b399"
-# name = "Status: Pending"
-# description = "保留"
-
-# #---------------------------------------------------------------------------------------------------
-# # 3.Priority 優先度を表すラベル
-# [ASAP]
-# color = "ff6666"
-# name = "Priority: ASAP"
-# description = "最優先"
-
-# [High]
-# color = "ff8a65"
-# name = "Priority: High"
-# description = "優先度: 高"
-
-# [Medium]
-# color = "ffd166"
-# name = "Priority: Medium"
-# description = "優先度: 中"
-
-# [Low]
-# color = "dce775"
-# name = "Priority: Low"
-# description = "優先度: 低"
-
-# [Safe]
-# color = "81c785"
-# name = "Priority: Safe"
-# description = "余裕があれば取り組む"
-
-# #---------------------------------------------------------------------------------------------------
-# # 4.Effort 作業量を表すラベル
-# [Painful]
-# color = "ff6666"
-# name = "Effort: Painful"
-# description = "作業量: 膨大"
-
-# [Heavy]
-# color = "ff8a65"
-# name = "Effort: Heavy"
-# description = "作業量: 多"
-
-# [Normal]
-# color = "ffd166"
-# name = "Effort: Normal"
-# description = "作業量: 中"
-
-# [Light]
-# color = "dce775"
-# name = "Effort: Light"
-# description = "作業量: 少"
-
-# [Effortless]
-# color = "81c785"
-# name = "Effort: Effortless"
-# description = "作業量: ほぼ無し"
-
-# #---------------------------------------------------------------------------------------------------
-# # 5.Feedback フィードバックの種類を表すラベル
-# [Discussion]
-# color = "f06293"
-# name = "Feedback: Discussion"
-# description = "機能に関する議論"
-
-# [Question]
-# color = "f06293"
-# name = "Feedback: Question"
-# description = "機能に関する質問"
-
-# [Suggestion]
-# color = "f06293"
-# name = "Feedback: Suggestion"
-# description = "機能に関する提案"
-
+["Type: Security Fix"]
+color = "ff6666"
+name = "Type: Security Fix"
+description = "セキュリティ問題の修正"
