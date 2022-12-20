@@ -51,84 +51,84 @@ color = "808ac6"
 name = "Status: Canceled"
 description = "作業中止"
 
-[Duplicate]
-color = "89a3a9"
-name = "Status: Duplicate"
-description = "Issue重複"
+# [Duplicate]
+# color = "89a3a9"
+# name = "Status: Duplicate"
+# description = "Issue重複"
 
-[Pending]
-color = "80b399"
-name = "Status: Pending"
-description = "保留"
+# [Pending]
+# color = "80b399"
+# name = "Status: Pending"
+# description = "保留"
 
-#---------------------------------------------------------------------------------------------------
-# 3.Priority 優先度を表すラベル
-[ASAP]
-color = "ff6666"
-name = "Priority: ASAP"
-description = "最優先"
+# #---------------------------------------------------------------------------------------------------
+# # 3.Priority 優先度を表すラベル
+# [ASAP]
+# color = "ff6666"
+# name = "Priority: ASAP"
+# description = "最優先"
 
-[High]
-color = "ff8a65"
-name = "Priority: High"
-description = "優先度: 高"
+# [High]
+# color = "ff8a65"
+# name = "Priority: High"
+# description = "優先度: 高"
 
-[Medium]
-color = "ffd166"
-name = "Priority: Medium"
-description = "優先度: 中"
+# [Medium]
+# color = "ffd166"
+# name = "Priority: Medium"
+# description = "優先度: 中"
 
-[Low]
-color = "dce775"
-name = "Priority: Low"
-description = "優先度: 低"
+# [Low]
+# color = "dce775"
+# name = "Priority: Low"
+# description = "優先度: 低"
 
-[Safe]
-color = "81c785"
-name = "Priority: Safe"
-description = "余裕があれば取り組む"
+# [Safe]
+# color = "81c785"
+# name = "Priority: Safe"
+# description = "余裕があれば取り組む"
 
-#---------------------------------------------------------------------------------------------------
-# 4.Effort 作業量を表すラベル
-[Painful]
-color = "ff6666"
-name = "Effort: Painful"
-description = "作業量: 膨大"
+# #---------------------------------------------------------------------------------------------------
+# # 4.Effort 作業量を表すラベル
+# [Painful]
+# color = "ff6666"
+# name = "Effort: Painful"
+# description = "作業量: 膨大"
 
-[Heavy]
-color = "ff8a65"
-name = "Effort: Heavy"
-description = "作業量: 多"
+# [Heavy]
+# color = "ff8a65"
+# name = "Effort: Heavy"
+# description = "作業量: 多"
 
-[Normal]
-color = "ffd166"
-name = "Effort: Normal"
-description = "作業量: 中"
+# [Normal]
+# color = "ffd166"
+# name = "Effort: Normal"
+# description = "作業量: 中"
 
-[Light]
-color = "dce775"
-name = "Effort: Light"
-description = "作業量: 少"
+# [Light]
+# color = "dce775"
+# name = "Effort: Light"
+# description = "作業量: 少"
 
-[Effortless]
-color = "81c785"
-name = "Effort: Effortless"
-description = "作業量: ほぼ無し"
+# [Effortless]
+# color = "81c785"
+# name = "Effort: Effortless"
+# description = "作業量: ほぼ無し"
 
-#---------------------------------------------------------------------------------------------------
-# 5.Feedback フィードバックの種類を表すラベル
-[Discussion]
-color = "f06293"
-name = "Feedback: Discussion"
-description = "機能に関する議論"
+# #---------------------------------------------------------------------------------------------------
+# # 5.Feedback フィードバックの種類を表すラベル
+# [Discussion]
+# color = "f06293"
+# name = "Feedback: Discussion"
+# description = "機能に関する議論"
 
-[Question]
-color = "f06293"
-name = "Feedback: Question"
-description = "機能に関する質問"
+# [Question]
+# color = "f06293"
+# name = "Feedback: Question"
+# description = "機能に関する質問"
 
-[Suggestion]
-color = "f06293"
-name = "Feedback: Suggestion"
-description = "機能に関する提案"
+# [Suggestion]
+# color = "f06293"
+# name = "Feedback: Suggestion"
+# description = "機能に関する提案"
 
