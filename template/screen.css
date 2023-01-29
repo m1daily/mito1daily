@@ -15,6 +15,7 @@ address,blockquote,img {
 	margin:0;
 	padding:0;
 	text-align: left;
+	font-size: 1.1vw;
 }
 
 img, fieldset {
@@ -199,7 +200,8 @@ div section {
 	border-collapse:collapse;
 	margin:0 auto;
 	margin-bottom: 5em;
-	width: 70%
+	width: 70%;
+	font-size: 1.1vw;
 }
 
 .credits caption {
@@ -227,3 +229,6 @@ div section {
 	padding:0 1em;
 }
 
+[id*="twitter-widget"] {
+	width: 30vw !important;
+}
