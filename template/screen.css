@@ -180,7 +180,7 @@ div section {
 	text-align:center;
 }
 
-.awards {
+.awards, .admin {
 	display:inline-block;
 	margin:0 auto;
 	width: 80%
@@ -215,6 +215,19 @@ div section {
 	border:0.625rem solid #0025;
 	border: double 0.2rem;
 	font-weight: bold;
+}
+
+.admin li {
+	text-align: left;
+	padding: 0vw;
+	margin-bottom: 0.2vw;
+	font-size: 1.1vw;
+}
+
+.AA {
+	font-size: 1.1vw;
+	line-height: 1;
+	color: #f4f4f4;
 }
 
 .galleryIndex ul {
