@@ -50,7 +50,7 @@ body > nav {
 	grid-area: nav;
 	padding-top: var(--mainPad);
 	background: var(--navBg);
-	width: 18vw;
+	width: 18rem;
 }
 
 body > nav {
@@ -115,12 +115,12 @@ section {
 }
 
 main ul {
-	padding-left: 2em;
+	padding-left: 2rem;
 }
 
 main li {
-	padding-bottom: 2em;
-	padding-left: 2em;
+	padding-bottom: 2rem;
+	padding-left: 2rem;
 	list-style: none;
 }
 
@@ -140,7 +140,7 @@ div section {
 	flex-wrap: wrap;
 	align-items: center;
 	margin-bottom: 1rem;
-	margin-left: 5vw;
+	margin-left: 5rem;
 }
 
 .platePair > img {
@@ -161,14 +161,14 @@ div section {
 	font-size: 1.0rem;
 	text-transform: uppercase;
 	font-weight: lighter;
-	margin-left: 9em;
+	margin-left: 9rem;
 }
 
 .announce:before,
 .announce:after {
 	content: " ★★★ ";
-	font-size: 1.0em;
-	line-height: 1.25em;
+	font-size: 1.0rem;
+	line-height: 1.25rem;
 }
 
 .dataPage {
@@ -177,28 +177,28 @@ div section {
 
 .awards, .admin {
 	display: inline-block;
-	margin: 0 auto;
+	margin: auto;
 	width: 80%;
 }
 
 .awards li {
 	text-align: left;
 	font-weight: bold;
-	padding: 0vw;
-	margin-bottom: 0.2vw;
-	font-size: 1.1vw;
+	padding: 0;
+	margin-bottom: 0.2rem;
+	font-size: 1.1rem;
 }
 
 .credits {
 	border-collapse: collapse;
-	margin: 0 auto;
+	margin: auto;
 	width: 80%;
 	font-size: 1.1rem;
-	margin-bottom: 10vw;
+	margin-bottom: 10rem;
 }
 
 .credits caption {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: bold;
 	margin-top: 2.5rem;
 	margin-bottom: 0.5rem;
@@ -206,7 +206,7 @@ div section {
 }
 
 .credits tr > * {
-	padding: 0.15em;
+	padding: 0.15rem;
 	border: 0.625rem solid #0025;
 	border: double 0.2rem;
 	font-weight: bold;
@@ -214,27 +214,17 @@ div section {
 
 .admin li {
 	text-align: left;
-	padding: 0vw;
-	margin-bottom: 0.2vw;
+	padding: 0;
+	margin-bottom: 0.2rem;
 	font-size: 1.1rem;
 }
 
 .AA {
 	font-size: 1.1rem;
 	line-height: 1;
-	color: #f4f4f4;
-}
-
-.galleryIndex ul {
-	padding: 0 0 1rem;
-}
-
-.galleryIndex li {
-	list-style: none;
-	display: inline;
-	padding: 0 1em;
+	color: #f5f5f4;
 }
 
 [id*="twitter-widget"] {
-	width: 30% !important;
+	width: 30rem !important;
 }
