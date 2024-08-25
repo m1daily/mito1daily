@@ -7,19 +7,31 @@ export default {
 	darkMode: 'class',
 	theme: {
 		colors: {
+			'white': '#f0f0f0',
 			'blue': '#1fb6ff',
 			'purple': '#7e5bef',
 			'pink': '#ff49db',
 			'orange': '#ff7849',
 			'green': '#13ce66',
 			'yellow': '#ffc82c',
-			'gray-dark': '#273444',
+			'gray-dark': '#151720',
 			'gray': '#8492a6',
-			'gray-light': '#d3dce6',
+			'gray-light': '#e6eaee',
 		},
 		fontFamily: {
 			sans: ['Graphik', 'sans-serif'],
 			serif: ['Merriweather', 'serif'],
+		},
+		fontSize: {
+			xs: ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.03em" }],
+			sm: ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "0.03em" }],
+			base: ["1rem", { lineHeight: "1.5rem", letterSpacing: "0.03em" }],
+			lg: ["1.125rem", { lineHeight: "1.75rem", letterSpacing: "0.03em" }],
+			xl: ["1.25rem", { lineHeight: "1.75rem", letterSpacing: "0.03em" }],
+			"2xl": ["1.5rem", { lineHeight: "2rem", letterSpacing: "0.03em" }],
+			"3xl": ["1.875rem", { lineHeight: "2.25rem", letterSpacing: "0.03em" }],
+			"4xl": ["2.25rem", { lineHeight: "2.5rem", letterSpacing: "0.03em" }],
+			"5xl": ["3rem", { lineHeight: "1", letterSpacing: "0.03em" }],
 		},
 		extend: {
 			spacing: {

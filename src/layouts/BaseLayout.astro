@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro';
+// import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
 
@@ -11,18 +12,10 @@ const { pageTitle } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
-	<body>
+	<body class="min-h-screen bg-gray-white dark:bg-gray-dark dark:text-gray-light">
 		<Header />
 		<h1>{pageTitle}</h1>
 	</body>
 </html>
-
-<style>
-    .sun { fill: black; }
-    .moon { fill: transparent; }
-  
-    :global(.dark) .sun { fill: transparent; }
-    :global(.dark) .moon { fill: white; }
-  </style>
 
 <script>import "preline/dist/preline.js";</script>
