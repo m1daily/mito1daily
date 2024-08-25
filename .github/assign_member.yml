@@ -1,0 +1,10 @@
+addAssignees: author
+
+addReviewers: true
+reviewers:
+  - SoniPana
+numberOfReviewers: 0
+
+skipKeywords:
+  - wip
+  - bump
