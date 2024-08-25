@@ -1,0 +1,125 @@
+{
+  "$schema": "https://bendera.github.io/vscode-commit-message-editor/schemas/config-v1.schema.json",
+  "configVersion": "1",
+  "staticTemplate": [
+    "feat: Short description",
+    "",
+    "Message body",
+    "",
+    "Message footer"
+  ],
+  "dynamicTemplate": [
+    "{type}{scope}: {description}",
+    "",
+    "{body}",
+    "",
+    "{breaking_change}{footer}"
+  ],
+  "tokens": [
+    {
+      "label": "変更内容",
+      "name": "type",
+      "type": "enum",
+      "options": [
+        {
+          "label": "🔨Build",
+          "description": "ビルドシステムや外部依存関係に影響する変更\n(スコープ例: gulp、broccoli、npm)"
+        },
+        {
+          "label": "➕️Add",
+          "description": "ファイル追加"
+        },
+        {
+          "label": "🔥Remove",
+          "value": "",
+          "description": "ファイル削除"
+        },
+        {
+          "label": "✨Feat",
+          "description": "新機能"
+        },
+        {
+          "label": "🐛Fix",
+          "description": "バグ修正"
+        },
+        {
+          "label": "🚀Perf",
+          "description": "パフォーマンスを向上させるコード変更"
+        },
+        {
+          "label": "📚Docs",
+          "description": "ドキュメントのみの変更"
+        },
+        {
+          "label": "🔧Config",
+          "description": "設定ファイルの変更 (スコープ例: .editorconfig、.gitattributes、.npmrc)"
+        },
+        {
+          "label": "♻️Refactor",
+          "description": "バグ修正でも機能追加でもないコード変更"
+        },
+        {
+          "label": "🧪Test",
+          "description": "不足しているテストの追加や既存のテストの修正"
+        },
+        {
+          "label": "✅End",
+          "description": "テスト完了"
+        },
+        {
+          "label": "🎉Impo",
+          "description": "重大"
+        },
+        {
+          "label": "Chore",
+          "description": "Updating grunt tasks etc; no production code change"
+        },
+        {
+          "label": "ci",
+          "description": "CI 設定ファイルとスクリプトの変更 (スコープ例: Travis、Circle、BrowserStack、SauceLabs)"
+        },
+        {
+          "label": "Revert"
+        }
+      ]
+    },
+    {
+      "label": "Scope",
+      "name": "scope",
+      "description": "コミットの型にスコープを指定して情報を追加 (括弧内に記述)",
+      "type": "text",
+      "multiline": false,
+      "prefix": "(",
+      "suffix": ")"
+    },
+    {
+      "label": "簡単な説明",
+      "name": "description",
+      "type": "text",
+      "multiline": false
+    },
+    {
+      "label": "Body",
+      "name": "body",
+      "description": "Optional body",
+      "type": "text",
+      "multiline": true,
+      "lines": 5,
+      "maxLines": 10
+    },
+    {
+      "label": "Breaking change",
+      "name": "breaking_change",
+      "type": "boolean",
+      "value": "BREAKING CHANGE: ",
+      "default": false
+    },
+    {
+      "label": "Footer",
+      "name": "footer",
+      "description": "Optional footer",
+      "type": "text",
+      "multiline": true
+    }
+  ]
+}
