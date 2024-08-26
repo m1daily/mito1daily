@@ -7,7 +7,7 @@ export default {
 	darkMode: 'class',
 	theme: {
 		colors: {
-			'white': '#f0f0f0',
+			'white': '#fcfcfc',
 			'blue': '#1fb6ff',
 			'purple': '#7e5bef',
 			'pink': '#ff49db',
@@ -16,7 +16,7 @@ export default {
 			'yellow': '#ffc82c',
 			'gray-dark': '#151720',
 			'gray': '#2e3647',
-			'gray-light': '#e6eaee',
+			'gray-light': '#f0f0f0',
 		},
 		fontFamily: {
 			sans: ['Graphik', 'sans-serif'],

@@ -1,11 +1,13 @@
 ---
 import ThemeIcon from '../components/ThemeIcon.astro';
 ---
+<!-- https://preline.co/examples/navigations-mega-menu.html#custom-size-with-icon-text-link-and-bg-gray-card -->
+
 <!-- ========== HEADER ========== -->
-<header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200 dark:bg-gray dark:border-neutral-700">
+<header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-gray-light border-b border-gray-200 dark:bg-gray dark:border-neutral-700">
   <nav class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center gap-x-1">
-      <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white" href="#" aria-label="mito1daily">mito1daily</a>
+      <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white" href="/" aria-label="mito1daily">mito1daily</a>
 
       <!-- Collapse Button -->
       <button type="button" class="hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-[12px] rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
@@ -36,7 +38,7 @@ import ThemeIcon from '../components/ThemeIcon.astro';
                 </button>
 
                 <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative md:w-[705px] lg:w-[750px] hidden z-10 top-full end-0 before:absolute before:-top-5 before:start-0 before:w-full before:h-5" role="menu" aria-orientation="vertical" aria-labelledby="hs-header-base-mega-menu-medium">
-                  <div class="md:mx-6 lg:mx-8 md:bg-white md:rounded-lg md:shadow-md dark:bg-gray dark:md:bg-neutral-800">
+                  <div class="md:mx-6 lg:mx-8 md:bg-gray-light md:rounded-lg md:shadow-md dark:bg-gray dark:md:bg-neutral-800">
                     <!-- Grid -->
                     <div class="pt-2 md:pt-0 grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-0">
                       <div class="col-span-3 md:p-3">
@@ -48,7 +50,7 @@ import ThemeIcon from '../components/ThemeIcon.astro';
                                 <span class="ms-2.5 mb-2 font-semibold text-xs uppercase text-gray-800 dark:text-neutral-200">About us</span>
 
                                 <!-- Link -->
-                                <a class="p-2 flex gap-x-3 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="#">
+                                <a class="p-2 flex gap-x-3 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="/profile">
                                   <svg class="shrink-0 size-4 mt-0.5 text-gray-800 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                                   <div class="grow">
                                     <p class="text-sm text-gray-800 dark:text-neutral-200">プロフィール</p>
@@ -207,14 +209,14 @@ import ThemeIcon from '../components/ThemeIcon.astro';
 
           <!-- Button Group -->
           <div class=" flex flex-wrap items-center gap-x-1.5">
-            <a class="py-[7px] px-2.5 inline-flex items-center font-medium text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray focus:outline-none focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="#">
+            <a class="py-[7px] px-2.5 inline-flex items-center font-medium text-sm rounded-lg border border-gray-200 bg-gray-light text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray focus:outline-none focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="#">
               Sign in
             </a>
             <a class="py-2 px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-blue-600 text-gray-800 hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:bg-blue-600" href="#">
               Get started
             </a>
+            <ThemeIcon />
           </div>
-          <ThemeIcon />
           <!-- End Button Group -->
         </div>
       </div>
