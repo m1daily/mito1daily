@@ -15,7 +15,7 @@ export default {
 			'green': '#13ce66',
 			'yellow': '#ffc82c',
 			'gray-dark': '#151720',
-			'gray': '#8492a6',
+			'gray': '#2e3647',
 			'gray-light': '#e6eaee',
 		},
 		fontFamily: {
