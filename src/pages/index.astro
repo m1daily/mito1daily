@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import info from '../data/info.json';
 const pageTitle = 'Home';
 const title = 'みといちでいりーのホームページ';
 const description = '水戸一高の時間割を配信する学校非公式のサービスです。現在ホームページ作成中。';
-const date = '24/08/27';
 ---
 <!-- https://preline.co/examples/hero-sections.html#hero-with-polygon-bg-element -->
 <BaseLayout pageTitle={pageTitle}>
@@ -23,7 +23,7 @@ const date = '24/08/27';
 			</div>
     		<div class="mt-8 flex justify-center items-center gap-x-1 sm:gap-x-3">
     			<span class="text-sm text-gray-600 dark:text-neutral-400">最終更新:</span>
-    			<span class="text-sm font-bold text-gray-900">{date}</span>
+				{info.map(({ update }) => (<span class="text-sm text-gray-900">{update}</span>))}
     			<svg class="size-5 text-gray-300 dark:text-neutral-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     				<path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round"/>
     			</svg>
