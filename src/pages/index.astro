@@ -3,9 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import info from '../data/info.json';
 const pageTitle = 'Home';
 const title = 'みといちでいりーのホームページ';
-const description = '水戸一高の時間割を配信する学校非公式のサービスです。現在ホームページ作成中。';
+const description = '水戸一高の時間割を配信する学校非公式のサービスです。現在ホームページ作成中。トップページとプロフィールのページのみ閲覧できます。';
 ---
-<!-- https://preline.co/examples/hero-sections.html#hero-with-polygon-bg-element -->
+
 <BaseLayout pageTitle={pageTitle}>
     <!-- Hero -->
     <div class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
@@ -50,3 +50,5 @@ const description = '水戸一高の時間割を配信する学校非公式の�
 <script>
 	import "../scripts/daily.js";
 </script>
+
+<!-- https://preline.co/examples/hero-sections.html#hero-with-polygon-bg-element -->

@@ -15,7 +15,7 @@ export default {
 			'green': '#13ce66',
 			'yellow': '#ffc82c',
 			'gray-dark': '#151720',
-			'gray': '#2e3647',
+			'gray': '#192030',
 			'gray2': '#505e7a',
 			'gray-light': '#f0f0f0',
 			'black': '#000000',
