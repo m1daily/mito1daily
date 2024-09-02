@@ -1,3 +1,4 @@
+const files = await Astro.glob("../assets/profile/**/*.{png,jpg,jpeg}");
 async function getImages(files) {
   const images = files.reduce((acc, file) => {
     const image = file.default;

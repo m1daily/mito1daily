@@ -4,7 +4,7 @@ import ProfileCard from '../components/ProfileCard.astro';
 import members from '../data/members.json';
 import { Image } from 'astro:assets';
 const pageTitle = 'Profile';
-const files = await Astro.glob("../assets/profile/*");
+const files = await Astro.glob("../assets/profile/*.{png,jpg,jpeg}");
 const images = files.reduce((acc, file) => {
   acc[file.default.src.split('/').pop().split('.')[0]] = file.default;
   return acc;
