@@ -1,4 +1,10 @@
 ---
+import { Image } from 'astro:assets';
+const files = await Astro.glob("../assets/profile/avatars/*.{png,jpg,jpeg}");
+const images = files.reduce((acc, file) => {
+  acc[file.default.src.split('/').pop().split('.')[0]] = file.default;
+  return acc;
+}, {});
 const { name } = Astro.props;
 const { roles } = Astro.props;
 const { avatar } = Astro.props;
@@ -9,7 +15,7 @@ const { website } = Astro.props;
 ---
 <div class="flex flex-col rounded-xl p-4 md:p-6 bg-white border border-gray-200 dark:bg-gray dark:border-gray2">
   <div class="flex items-center gap-x-4">
-    <img class="rounded-full size-20" src={avatar} alt="Avatar">
+    <Image class="rounded-full size-20" src={images[avatar]} alt="GitHub" />
     <div class="grow">
       <h3 class="font-bold text-lg text-black-500 dark:text-neutral-200">{name}</h3>
       <p class="text-xs uppercase text-gray-500 dark:text-neutral-500">{roles}</p>
