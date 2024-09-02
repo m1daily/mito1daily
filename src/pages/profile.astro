@@ -2,6 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProfileCard from '../components/ProfileCard.astro';
 import members from '../data/members.json';
+import { Image } from 'astro:assets';
+import monitor from "../assets/profile/monitor.jpg"; // Image is 1600x941
+import github from "../assets/profile/github.png"; // Image is 1600x900
 const pageTitle = 'Profile';
 ---
 
@@ -32,19 +35,13 @@ const pageTitle = 'Profile';
       </div>
 
       <div class="relative ms-4">
-        <picture>
-          <source class="w-full rounded-md" srcset="/images/webp/monitor.webp" type="image/webp">
-          <img class="w-full rounded-md" src="/images/monitor.jpg" alt="monitor">
-        </picture>
+        <Image class="w-full rounded-md" src={monitor} alt="monitor" />
       </div>
     </div>
 
     <div class="grid mt-20 md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
       <div class="relative ms-4">
-        <picture>
-          <source class="w-full rounded-md border border-gray-200" srcset="/images/webp/github.webp" type="image/webp">
-          <img class="w-full rounded-md border border-gray-200" src="/images/github.png" alt="GitHub">
-        </picture>
+        <Image class="w-full rounded-md border border-gray-200" src={github} alt="GitHub" />
       </div>
 
       <div class="justify-center">
