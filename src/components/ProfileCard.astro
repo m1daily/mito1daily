@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 const files = await Astro.glob("../assets/profile/avatars/*.{png,jpg,jpeg}");
 const images = files.reduce((acc, file) => {
-  acc[file.default.src.split('/').pop().split('.')[0]] = file.default;
+  acc[file.default.src.split('/').pop().split('?')[0]] = file.default;
   return acc;
 }, {});
 const { name } = Astro.props;
