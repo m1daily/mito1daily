@@ -5,6 +5,7 @@ const images = files.reduce((acc, file) => {
   acc[file.default.src.split('/').pop().split('.')[0]] = file.default;
   return acc;
 }, {});
+console.log(images);
 const { name } = Astro.props;
 const { roles } = Astro.props;
 const { avatar } = Astro.props;
