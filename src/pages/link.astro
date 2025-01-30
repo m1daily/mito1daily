@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LinkCard from '../components/LinkCard.astro';
+import link from '../data/link.json';
+const pageTitle = 'Link';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+<!-- Card Blog -->
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Title -->
+    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Link</h2>
+      <p class="mt-1 text-gray-600 dark:text-neutral-400">便利なリンク集</p>
+    </div>
+    <!-- End Title -->
+    <!-- Grid -->
+    <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
+        {link.map((url) => (
+            <LinkCard {...url} />
+        ))}
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Card Blog -->
+</BaseLayout>
+<!-- https://preline.co/examples/blog-sections.html#blog-2-grids-list -->
