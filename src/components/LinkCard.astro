@@ -10,6 +10,7 @@ const { desc } = Astro.props;
 const { image } = Astro.props;
 const { url } = Astro.props;
 ---
+<!-- LinkCard -->
 <a class="group block rounded-xl overflow-hidden focus:outline-none" href={url} target="_blank">
   <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
     <div class="shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
@@ -26,6 +27,3 @@ const { url } = Astro.props;
     </div>
   </div>
 </a>
-
-
-<!-- https://preline.co/examples/blog-sections.html#blog-2-grids-list -->
