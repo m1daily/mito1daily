@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+const files = await Astro.glob("../assets/service/icons/*.{png,jpg,jpeg}");
+const images = files.reduce((acc, file) => {
+  acc[file.default.src.split('/').pop().split('.')[0]] = file.default;
+  return acc;
+}, {});
+const { name } = Astro.props;
+const { color } = Astro.props;
+const { avatar } = Astro.props;
+const { bio } = Astro.props;
+const { link } = Astro.props;
+---
+<div class="group flex flex-col h-full bg-white border border-gray-200 shadow-2xs rounded-xl dark:bg-gray dark:border-gray2">
+  <div class="h-52 flex flex-col justify-center items-center rounded-t-xl" class:list={[`bg-${color}`]}>
+    <Image class="size-40" src={images[avatar]} alt={name} />
+  </div>
+  <div class="p-4 md:p-6">
+    <h3 class="font-bold text-lg text-black-500 dark:text-neutral-200">{name}</h3>
+    <p class="mt-3 text-gray-100 dark:text-neutral-500">{bio}</p>
+  </div>
+  <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
+    <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray dark:border-gray2 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href={link}>使ってみる</a>
+  </div>
+</div>
+
+<!-- https://preline.co/examples/card-sections.html#cards-image-and-content-with-stretched-buttons -->

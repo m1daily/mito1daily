@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Twitter",
+    "avatar": "twitter-icon",
+    "color": "twitter",
+    "bio": "aaa",
+    "link": "https://twitter.com/soni"
+  },
+  {
+    "name": "Instagram",
+    "avatar": "instagram-icon",
+    "color": "instagram",
+    "bio": "ccc",
+    "link": "https://instagram.com/soni"
+  }
+]

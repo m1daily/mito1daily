@@ -19,6 +19,7 @@ export default {
 			'gray2': '#505e7a',
 			'gray-light': '#f0f0f0',
 			'black': '#000000',
+      'twitter': '#1da1f2',
 		},
 		fontFamily: {
 			sans: ['Graphik', 'sans-serif'],

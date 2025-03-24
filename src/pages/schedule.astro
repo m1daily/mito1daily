@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProfileCard from '../components/ProfileCard.astro';
+import { Image } from 'astro:assets';
+const pageTitle = 'schedule';
+const files = await Astro.glob("../assets/profile/*.{png,jpg,jpeg}");
+const images = files.reduce((acc, file) => {
+  acc[file.default.src.split('/').pop().split('.')[0]] = file.default;
+  return acc;
+}, {});
+const data = await fetch('https://script.google.com/macros/s/AKfycbx-b1ChwWgdUrcTi0EYVO06Bdhm4cv--GWlFqp0ir2enNBRduiI2SV2Z1FyK_2ro-lFOg/exec').then(r => r.json());
+console.log(data[0].time);
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">現在の時間割</h2>
+      <p class="mt-1 text-gray-600 dark:text-neutral-400">みといちでいりーについて</p>
+      <img class="w-full rounded-md" src={data[0].url} alt="時間割" />
+    </div>
+  </div>
+</BaseLayout>
