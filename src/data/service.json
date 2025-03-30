@@ -3,28 +3,28 @@
     "name": "Twitter",
     "avatar": "twitter-icon",
     "color": "#1da1f2",
-    "bio": "aaa",
+    "bio": "時間割更新通知の他、様々な情報をお届け",
     "link": "https://twitter.com/soni"
   },
   {
     "name": "LINE",
     "avatar": "line-icon",
     "color": "#22b950",
-    "bio": "公式アカウントから最新情報をお届けします。",
+    "bio": "公式アカウントでお手軽に時間割受け取り",
     "link": "https://line.me/soni"
   },
   {
     "name": "Discord",
     "avatar": "discord-icon",
     "color": "#5765f2",
-    "bio": "Join our community on Discord.",
+    "bio": "通知機能設定の柔軟性が高い",
     "link": "https://discord.com/invite/your-invite-code"
   },
   {
     "name": "Instagram",
     "avatar": "instagram-icon",
     "color": "#e1306c",
-    "bio": "ccc",
+    "bio": "時間割更新通知だけ必要な人向け",
     "link": "https://instagram.com/soni"
   }
 ]

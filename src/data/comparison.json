@@ -1,0 +1,89 @@
+[
+  {
+    "section": "基本情報",
+    "list": [
+      {
+        "title": "作者のオススメ度",
+        "item": [
+          {"service": "Twitter", "value": "◯"},
+          {"service": "LINE", "value": "◎"},
+          {"service": "Discord", "value": "◯"},
+          {"service": "Instagram", "value": "◯"}
+        ]
+      },
+      {
+        "title": "概要",
+        "item": [
+          {"service": "Twitter", "value": "機能豊富"},
+          {"service": "LINE", "value": "安定度＆便利度 高"},
+          {"service": "Discord", "value": "通知機能の柔軟性 高"},
+          {"service": "Instagram", "value": "シンプル"}
+        ]
+      },
+      {
+        "title": "利用料金",
+        "item": [
+          {"service": "Twitter", "value": "無料"},
+          {"service": "LINE", "value": "無料"},
+          {"service": "Discord", "value": "無料"},
+          {"service": "Instagram", "value": "無料"}
+        ]
+      }
+    ]
+  },
+  {
+    "section": "機能",
+    "list": [
+      {
+        "title": "時間割更新通知",
+        "item": [
+          {"service": "Twitter", "value": "t"},
+          {"service": "LINE", "value": "f"},
+          {"service": "Discord", "value": "t"},
+          {"service": "Instagram", "value": "t"}
+        ]
+      },
+      {
+        "title": "月間予定確認",
+        "item": [
+          {"service": "Twitter", "value": "t"},
+          {"service": "LINE", "value": "t"},
+          {"service": "Discord", "value": "t"},
+          {"service": "Instagram", "value": "f"}
+        ]
+      },
+      {
+        "title": "土曜課外確認",
+        "item": [
+          {"service": "Twitter", "value": "t"},
+          {"service": "LINE", "value": "t"},
+          {"service": "Discord", "value": "f"},
+          {"service": "Instagram", "value": "f"}
+        ]
+      },
+      {
+        "title": "水戸一高ニュース確認",
+        "item": [
+          {"service": "Twitter", "value": "t"},
+          {"service": "LINE", "value": "t"},
+          {"service": "Discord", "value": "f"},
+          {"service": "Instagram", "value": "f"}
+        ]
+      }
+    ]
+  },
+  {
+    "section": "その他",
+    "list": [
+      {
+        "title": "エラー率",
+        "item": [
+          {"service": "Twitter", "value": "安定"},
+          {"service": "LINE", "value": "安定"},
+          {"service": "Discord", "value": "非常に安定"},
+          {"service": "Instagram", "value": "安定"}
+        ]
+      }
+    ]
+  }
+]

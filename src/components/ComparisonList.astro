@@ -1,0 +1,58 @@
+---
+// 型定義を追加
+interface Item {
+  service: string;
+  value: string;
+}
+
+interface List {
+  title: string;
+  item: Item[];
+}
+
+interface Props {
+  section: string;
+  list: List[];
+}
+
+const { section, list }: Props = Astro.props;
+---
+<div class="mt-6 space-y-4 lg:space-y-0">
+  <ul class="grid lg:grid-cols-6 lg:gap-6">
+    <li class="lg:col-span-2 lg:py-3">
+      <span class="text-lg font-semibold text-gray-800 dark:text-neutral-200">{section}</span>
+    </li>
+    <li class="hidden lg:block lg:col-span-1 py-1.5 lg:py-3 px-4 lg:px-0 lg:text-center"></li>
+    <li class="hidden lg:block lg:col-span-1 py-1.5 lg:py-3 px-4 lg:px-0 lg:text-center"></li>
+    <li class="hidden lg:block lg:col-span-1 py-1.5 lg:py-3 px-4 lg:px-0 lg:text-center"></li>
+    <li class="hidden lg:block lg:col-span-1 py-1.5 lg:py-3 px-4 lg:px-0 lg:text-center"></li>
+  </ul>
+
+  <!-- List -->
+  {list.map((l) => (
+    <ul class="grid lg:grid-cols-6 lg:gap-6">
+      <li class="lg:col-span-2 pb-1.5 lg:py-3">
+        <span class="text-sm text-gray-800 dark:text-neutral-200">{l.title}</span>
+      </li>
+
+      {l.item.map((k) => (
+        <li class="col-span-1 py-1.5 lg:py-3 px-4 lg:px-0 lg:text-center bg-gray-light dark:bg-gray">
+          <div class="grid grid-cols-6 lg:block">
+            <span class="lg:hidden col-span-2 text-sm text-gray-800 dark:text-neutral-200">{k.service}</span>
+            {k.value === "t" ? (
+              <svg class="shrink-0 lg:mx-auto size-5 text-blue2 dark:text-blue2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              ) : k.value === "f" ? (
+              <svg class="shrink-0 lg:mx-auto size-5 text-gray-400 dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"/>
+              </svg>
+            ) : (
+              <span class="text-sm font-semibold text-gray-800 dark:text-neutral-200">{k.value}</span>
+            )}
+          </div>
+        </li>
+      ))}
+    </ul>
+  ))}
+</div>
