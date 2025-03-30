@@ -2,14 +2,28 @@
   {
     "name": "Twitter",
     "avatar": "twitter-icon",
-    "color": "twitter",
+    "color": "#1da1f2",
     "bio": "aaa",
     "link": "https://twitter.com/soni"
   },
   {
+    "name": "LINE",
+    "avatar": "line-icon",
+    "color": "#22b950",
+    "bio": "公式アカウントから最新情報をお届けします。",
+    "link": "https://line.me/soni"
+  },
+  {
+    "name": "Discord",
+    "avatar": "discord-icon",
+    "color": "#5765f2",
+    "bio": "Join our community on Discord.",
+    "link": "https://discord.com/invite/your-invite-code"
+  },
+  {
     "name": "Instagram",
     "avatar": "instagram-icon",
-    "color": "instagram",
+    "color": "#e1306c",
     "bio": "ccc",
     "link": "https://instagram.com/soni"
   }
